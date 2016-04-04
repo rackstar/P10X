@@ -17,12 +17,10 @@
     "url": "https://github.com/rackstar/P10X/issues"
   },
   "homepage": "https://github.com/rackstar/P10X#readme",
-  "devDependencies": {
+  "dependencies": {
     "browser-sync": "^2.11.2",
     "gulp": "^3.9.1",
-    "gulp-nodemon": "^2.0.6"
-  },
-  "dependencies": {
+    "gulp-nodemon": "^2.0.6",
     "express": "^4.13.4"
   }
 }
