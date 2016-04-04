@@ -1,0 +1,28 @@
+{
+  "name": "p10x",
+  "version": "0.0.1",
+  "description": "be a 10x programmer",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp test",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rackstar/P10X.git"
+  },
+  "author": "Rocky Murdoch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rackstar/P10X/issues"
+  },
+  "homepage": "https://github.com/rackstar/P10X#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
