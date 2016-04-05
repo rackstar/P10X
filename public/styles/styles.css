@@ -22,7 +22,7 @@
   margin-top: 15px;
 }
 
-#schultzTable {
+#schultzTable, #level, .current {
     position: relative;
     margin: 0;
     position: absolute;
@@ -42,6 +42,23 @@
   height: 5px;
   border-radius: 100%;
   background: red;
+}
+
+#level {
+  top: 60%;
+}
+
+.levelUp, .levelDown {
+  padding: 0 20px 0 20px;
+}
+
+.correct {
+  background-color: green;
+  color: gree ;
+}
+
+.current {
+  top: 35%;
 }
 /*#bookListWrapper {
   width: 100%;
