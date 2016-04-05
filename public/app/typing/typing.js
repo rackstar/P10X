@@ -23,7 +23,7 @@ $(function () {
     $('#' + type.index).addClass('next');
     var pressedKey = $('#keyboard').find('.' + key);
     pressedKey.addClass('activeType')
-      .delay(150)
+      .delay(200)
       .queue(function() {
         $(this).removeClass("activeType");
         $(this).dequeue()
