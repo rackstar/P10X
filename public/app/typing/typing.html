@@ -125,10 +125,13 @@
     $(function() {
       $("#inputArea").on('keypress', function (event) {
         var key = String.fromCharCode(event.which);
-        console.log(key, event.which);
         type.compare(key);
         type.keyboard(event.which);
       });
+      $('body').on('keypress', function (event) {
+        type.keyboard(event.which);
+      });
+
       // $("#typingArea").on('keypress', function (event) {
       //   console.log('inside typing area');
       //   type.keyboard(event.which);
