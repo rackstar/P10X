@@ -54,7 +54,7 @@
 
 .correct {
   background-color: green;
-  color: gree ;
+  color: white;
 }
 
 .current {
@@ -84,23 +84,31 @@
 }
 
 .fragment-item {
-  padding: 0;
+  padding: 2.5px;
   margin: 0;
+  border: 0;
   font-size: 1.5em;
   color: #7F7E8D;
 }
 
 .fragment-item-space {
-  font-size: 0.8em;
+  font-size: 1em;
   color: #CACAD0;
 }
 
-.correct {
-  
+.correctType {
+  background-color: white;
+  color: #39ac73;
 }
 
 .incorrect {
+  background: #ffc0c0;
+  color: red;
+}
 
+.next {
+  background-color: #66ccff;
+  color: white;
 }
 
 /* KEYBOARD CSS */
@@ -125,7 +133,7 @@
   border: 0px solid #e7e7e7;
   position: absolute;
   top: 400px;
-  left: 56.5%;
+  left: 55%;
   margin-left: -380px;
 }
 
@@ -154,7 +162,7 @@
   -webkit-filter: blur(0px);
 }
 
-.akey.active {
+.activeType {
   -webkit-filter: blur(0px);
   box-shadow: 0 0 40px #54779f;
   background: #5293E2 !important;
