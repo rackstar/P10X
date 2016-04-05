@@ -61,6 +61,153 @@
   top: 30%;
   font-size: 1.4em;
 }
+
+
+#Fragment, #inputArea {
+  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#inputArea {
+  width: 400px;
+  height: 60px;
+  display: block;
+  font-size: 13px;
+  padding: 5px;
+  margin-bottom: 5px;
+  top: 45%;
+}
+
+.fragment-item {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+  color: #7F7E8D;
+}
+
+.fragment-item-space {
+  font-size: 0.8em;
+  color: #CACAD0;
+}
+
+.correct {
+  
+}
+
+.incorrect {
+
+}
+
+/* KEYBOARD CSS */
+.akeyboard, #keyboard{
+  color:#444;
+  line-height: normal;
+  font-family: arial;
+  border-radius:10px;
+  padding:5px;
+  width:695px;
+  -webkit-transition:.30s linear all;
+  -webkit-transform: rotateY(-15deg) rotateX(-25deg) scale(.9);
+  -moz-transition:.3s linear all;
+  -moz-transform: rotateY(-15deg) rotateX(-25deg) scale(.9);
+  opacity:0;
+  /*box-shadow: 0 0 7px #bbb;*/
+  /*background:#f8f8f8 url(../blue/noise.png);*/
+  /*background:url(stripe1.jpg) repeat right top;*/
+}
+
+#keyboard {
+  border: 0px solid #e7e7e7;
+  position: absolute;
+  top: 400px;
+  left: 56.5%;
+  margin-left: -380px;
+}
+
+
+.akeyboard, #keyboard.animate{
+  -webkit-transform: rotateY(0deg) rotateZ(0deg) scale(1);
+  -moz-transform: rotateY(0deg) rotateZ(0deg) scale(1);
+  opacity:1;
+}
+
+.akey {
+  display: block;
+  float: left;
+  padding: 5px;
+  width: 37px;
+  height: 38px;
+  background: white;
+  border-radius: 5px;
+  margin: 1px;
+  cursor: default;
+  border: 1px solid #bbb;
+}
+
+
+.akey {
+  -webkit-filter: blur(0px);
+}
+
+.akey.active {
+  -webkit-filter: blur(0px);
+  box-shadow: 0 0 40px #54779f;
+  background: #5293E2 !important;
+  color: white;
+  border: 1px solid #54779f;
+  font-weight: bold;
+}
+
+.akey.dummy {
+  opacity: .4;
+}
+
+.akey.dummy:hover {
+  background: white;
+  box-shadow: none;
+}
+
+.backspace,
+.tab,
+.capsLock,
+.enter,
+.leftShift,
+.rightShift,
+.space {
+  font-size: 12px;
+}
+
+.rightShift,
+.enter,
+.backspace {
+  text-align: right;
+}
+
+
+/*#keyboard.shift_key_inactive .sec-chr{color:#999;}
+#keyboard.shift_key_active .pri-chr{color:#999;}*/
+
+
+.sec-chr{}
+.pri-chr{position: absolute; margin: 8px 13px;}
+
+#keyboard.shift_key_inactive .sec-chr{color:#ccc;}
+#keyboard.shift_key_active .pri-chr{color:#ccc;}
+
+#keyboard.shift_key_inactive .akey.active .sec-chr,
+#keyboard.shift_key_active .akey.active .pri-chr{opacity:.3;}
+
+#keyboard {
+  height: 230px;
+  width: 610px
+}
+/* END KEYBOARD */
+
 /*#bookListWrapper {
   width: 100%;
   padding: 10px;
