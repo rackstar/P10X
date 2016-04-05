@@ -1,14 +1,23 @@
 <h1>reading</h1>
 
+<table class='current'>
+  <tr>
+    <td>
+      {{next}}
+    </td>
+  </tr>  
+</table>
+
 <table id="schultzTable">
   <tr id="row">
     <div class="l">
-      <td id="l6"  ng-click="contains(this.id)" >0</td>
-      <td id="l5"  ng-click="contains(this.id)" >0</td>
-      <td id="l4"  ng-click="contains(this.id)" >0</td>
-      <td id="l3"  ng-click="contains(this.id)" >0</td>
-      <td id="l2"  ng-click="contains(this.id)" >0</td>
-      <td id="l1"  ng-click="contains(this.id)" >0</td>
+      <td data-id="7"  ng-click="contains(randomArr[12], 12)" ng-class="{'correct': data[12]}" ng-show='compareVal(7)' >{{randomArr[12]}}</td>
+      <td data-id="6"  ng-click="contains(randomArr[10], 10)" ng-class="{'correct': data[10]}" ng-show='compareVal(6)' >{{randomArr[10]}}</td>
+      <td data-id="5"  ng-click="contains(randomArr[8], 8)" ng-class="{'correct': data[8]}" ng-show='compareVal(5)' >{{randomArr[8]}}</td>
+      <td data-id="4"  ng-click="contains(randomArr[6], 6)" ng-class="{'correct': data[6]}" ng-show='compareVal(4)' >{{randomArr[6]}}</td>
+      <td data-id="3"  ng-click="contains(randomArr[4], 4)" ng-class="{'correct': data[4]}" ng-show='compareVal(3)' >{{randomArr[4]}}</td>
+      <td data-id="2"  ng-click="contains(randomArr[2], 2)" ng-class="{'correct': data[2]}" ng-show='compareVal(2)' >{{randomArr[2]}}</td>
+      <td data-id="1"  ng-click="contains(randomArr[0], 0)" ng-class="{'correct': data[0]}" ng-show='compareVal(1)'  > {{randomArr[0]}}</td>
     </div>
       <td>
         <svg height="100" width="200">
@@ -16,12 +25,24 @@
         </svg>
       </td>
     <div class="r">
-      <td id="r1"  ng-click="contains(this.id)" >0</td>
-      <td id="r2"  ng-click="contains(this.id)" >0</td>
-      <td id="r3"  ng-click="contains(this.id)" >0</td>
-      <td id="r4"  ng-click="contains(this.id)" >0</td>
-      <td id="r5"  ng-click="contains(this.id)" >0</td>
-      <td id="r6"  ng-click="contains(this.id)" >0</td>
+      <td data-id="1"  ng-click="contains(randomArr[1], 1)" ng-class="{'correct': data[1]}" ng-show='compareVal(1)' >{{randomArr[1]}}</td>
+      <td data-id="2"  ng-click="contains(randomArr[3], 3)" ng-class="{'correct': data[3]}" ng-show='compareVal(2)' >{{randomArr[3]}}</td>
+      <td data-id="3"  ng-click="contains(randomArr[5], 5)" ng-class="{'correct': data[5]}" ng-show='compareVal(3)' >{{randomArr[5]}}</td>
+      <td data-id="4"  ng-click="contains(randomArr[7], 7)" ng-class="{'correct': data[7]}" ng-show='compareVal(4)' >{{randomArr[7]}}</td>
+      <td data-id="5"  ng-click="contains(randomArr[9], 9)" ng-class="{'correct': data[9]}" ng-show='compareVal(5)' >{{randomArr[9]}}</td>
+      <td data-id="6"  ng-click="contains(randomArr[11], 11)" ng-class="{'correct': data[11]}" ng-show='compareVal(6)' >{{randomArr[11]}}</td>
+      <td data-id="7"  ng-click="contains(randomArr[13], 13)" ng-class="{'correct': data[13]}" ng-show='compareVal(7)' >{{randomArr[13]}}</td>
     </div>
+  </tr>
+</table>
+
+<table id="level">
+  <tr class='levelRow'>
+    <td class='levelUp' ng-click="levelUp()">
+      <
+    </td>
+    <td class='levelDown' ng-click="levelDown()">
+      >
+    </td>
   </tr>
 </table>
