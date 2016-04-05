@@ -26,7 +26,7 @@
     position: relative;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -45,7 +45,7 @@
 }
 
 #level {
-  top: 60%;
+  top: 50%;
 }
 
 .levelUp, .levelDown {
@@ -58,7 +58,8 @@
 }
 
 .current {
-  top: 35%;
+  top: 30%;
+  font-size: 1.4em;
 }
 /*#bookListWrapper {
   width: 100%;
