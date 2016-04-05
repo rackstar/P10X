@@ -20,8 +20,12 @@
             <span class="tagline pull-left">{{appDetails.tagline}}</span>
             <div class="nav-wrapper pull-left">
                 <ul class="nav nav-pills">
-                    <li ng-click="toggleTyping()" ng-class="{'active': typingActive}"><a href="#/typing">Typing</a></li>
-                    <li ng-click="toggleReading()" ng-class="{'active': readingActive}"><a href="#/reading">Reading</a></li>
+                    <li ng-click="toggleTyping()" 
+                        ng-class="{'active': typingActive}"><a href="#/typing">Typing</a></li>
+                    <li ng-click="toggleReading()" 
+                        ng-class="{'active': readingActive}"><a href="#/reading">Reading</a></li>
+                    <li ng-click="toggleTable()" 
+                        ng-class="{'active': tableActive}"><a href="#/table">Table</a></li>
                 </ul>
             </div>
         </div>
