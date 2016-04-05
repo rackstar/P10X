@@ -1,4 +1,5 @@
-var p10x = angular.module('p10x', ['ngRoute', 'typing', 'reading', 'services']);
+
+var p10x = angular.module('p10x', ['ngRoute', 'reading', 'services']);
 
 
 p10x.config(function ($routeProvider) {
@@ -9,7 +10,6 @@ p10x.config(function ($routeProvider) {
     })
     .when('/typing', {
       templateUrl: 'app/typing/typing.html',
-      controller: 'typingCtrl'
     })
     .otherwise({
       redirectTo: '/typing'
