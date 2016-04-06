@@ -71,6 +71,7 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  font-size: 1.5em;
 }
 
 #inputArea {
@@ -80,7 +81,7 @@
   font-size: 13px;
   padding: 5px;
   margin-bottom: 5px;
-  top: 45%;
+  top: 37%;
 }
 
 .fragment-item {
@@ -133,7 +134,7 @@
   border: 0px solid #e7e7e7;
   position: absolute;
   top: 400px;
-  left: 55%;
+  left: 52%;
   margin-left: -380px;
 }
 
