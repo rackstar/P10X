@@ -17,7 +17,7 @@ angular.module('services', [])
     return result;
   };
 
-  var text = split(data, 3);
+  var text = split(data, 5);
 
   showSlide = function() {
     var textArea = document.getElementById('textArea');
