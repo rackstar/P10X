@@ -67,7 +67,7 @@
   position: relative;
   margin: 0;
   position: absolute;
-  top: 30%;
+  top: 28%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -134,8 +134,8 @@
 #keyboard {
   border: 0px solid #e7e7e7;
   position: absolute;
-  top: 55%;
-  left: 53%;
+  top: 50%;
+  left: 52%;
   margin-left: -380px;
 }
 
