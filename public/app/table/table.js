@@ -6,7 +6,7 @@ angular.module('table', [])
   $scope.next = 1;
   $scope.current;
   $scope.data = {}
-  $scope.difficulty = 'noob';
+  $scope.difficulty;
 
   $scope.random = function(n) {
     randomNumbers = []
@@ -39,28 +39,29 @@ angular.module('table', [])
   };
 
   $scope.levelUp = function() {
+    $scope.next = 1;
     $scope.level += 2;
     $scope.random($scope.level);
     if($scope.level === 2) {
-      $scope.difficulty = 'not so noob'
+      $scope.difficulty = 'Newbie'
     }
     if($scope.level === 4) {
-      $scope.difficulty = 'getting better'
+      $scope.difficulty = 'Not so newb'
     }
     if($scope.level === 6) {
-      $scope.difficulty = 'difficult'
+      $scope.difficulty = 'Getting better'
     }
     if($scope.level === 8) {
-      $scope.difficulty = 'impresive'
+      $scope.difficulty = 'Impressive'
     }
     if($scope.level === 10) {
-      $scope.difficulty = 'expert'
+      $scope.difficulty = 'Expert'
     }
     if($scope.level === 12) {
       $scope.difficulty = 'Master Ninja Level'
     }
     if($scope.level === 14) {
-      $scope.difficulty = 'you must be cheating if you can do this'
+      $scope.difficulty = 'You must be cheating if you can do this'
     }
   };
 
