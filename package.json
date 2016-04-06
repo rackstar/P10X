@@ -19,8 +19,8 @@
   "homepage": "https://github.com/rackstar/P10X#readme",
   "dependencies": {
     "browser-sync": "^2.11.2",
+    "express": "^4.13.4",
     "gulp": "^3.9.1",
-    "gulp-nodemon": "^2.0.6",
-    "express": "^4.13.4"
+    "gulp-nodemon": "^2.0.6"
   }
 }
