@@ -22,7 +22,7 @@
   margin-top: 15px;
 }
 
-#schultzTable, #level, .current {
+#schultzTable, #level, .current, #textArea{
     position: relative;
     margin: 0;
     position: absolute;
@@ -213,6 +213,22 @@
 #keyboard {
   height: 230px;
   width: 610px
+}
+
+.words {
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+#textArea {
+  position: relative;
+  top: 300px;
+  width: 400px;
+  height: 200px;
+  border: solid 1px black;
 }
 /* END KEYBOARD */
 
