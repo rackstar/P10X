@@ -1,19 +1,19 @@
 
-var p10x = angular.module('p10x', ['ngRoute', 'reading', 'services']);
+var p10x = angular.module('p10x', ['ngRoute', 'table', 'read', 'services']);
 
 
 p10x.config(function ($routeProvider) {
   $routeProvider
     .when('/reading', {
-      templateUrl: 'app/realReading/read.html',
+      templateUrl: 'app/read/read.html',
       // controller: 'realReadCtrl'
     })
     .when('/typing', {
       templateUrl: 'app/typing/typing.html',
     })
     .when('/table', {
-      templateUrl: 'app/reading/reading.html',
-      controller: 'readingCtrl'
+      templateUrl: 'app/table/table.html',
+      controller: 'tableCtrl'
     })
     .otherwise({
       redirectTo: '/typing'
